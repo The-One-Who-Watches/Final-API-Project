@@ -8,6 +8,7 @@ const amountEl = document.getElementById("amount");
 const withdrawBtn = document.getElementById("withdrawBTN");
 const depositBtn = document.getElementById("depositBTN");
 const change = document.getElementById("amountChange");
+const greeting = document.getAnimations("greeting");
 
 let index;
 let indexNum;
@@ -42,6 +43,7 @@ function searchArr(e) {
   index.amount = Number(index.amount);
   currentObj = index;
   tallyEl.textContent = amount;
+  greeting.textContent = `Greetings, ${index.name}.`;
 }
 
 function withdrawFunc(e) {
