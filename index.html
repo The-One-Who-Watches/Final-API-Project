@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>API Final Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Create Account</h2>
+        <form id="form">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="ID">ID Number</label>
+          <input type="text" name="ID" id="ID" />
+          <label for="Amount">Amount</label>
+          <input type="text" name="amount" id="amount" />
+          <button type="submit">submit</button>
+        </form>
+      </div>
+      <div class="form-container">
+        <h2>Find Account by ID</h2>
+        <form id="searchForm">
+          <label for="search">Search</label>
+          <input type="text" name="search" id="search" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="form-container">
+        <h2>withdraw or deposit</h2>
+        <form id="amountForm">
+          <label for="amountChange"></label>
+          <input type="text" name="amountChange" id="amountChange" />
+          <button id="withdrawBTN">withdraw</button>
+          <button id="depositBTN">deposit</button>
+        </form>
+      </div>
+
+      <div class="tally-container">
+        <h2>Current Amount</h2>
+        <div id="amountTally"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
