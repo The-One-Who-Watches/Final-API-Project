@@ -8,7 +8,7 @@ const amountEl = document.getElementById("amount");
 const withdrawBtn = document.getElementById("withdrawBTN");
 const depositBtn = document.getElementById("depositBTN");
 const change = document.getElementById("amountChange");
-const greeting = document.getAnimations("greeting");
+const greeting = document.getElementById("greeting");
 
 let index;
 let indexNum;
