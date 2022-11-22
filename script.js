@@ -9,6 +9,8 @@ const withdrawBtn = document.getElementById("withdrawBTN");
 const depositBtn = document.getElementById("depositBTN");
 const change = document.getElementById("amountChange");
 const greeting = document.getElementById("greeting");
+const API =
+  "api.openweathermap.org/data/2.5/forecast?lat=40.534260&lon=-112.298431&appid=0f54b82b2020399a3fd7837b04faca1d";
 
 let index;
 let indexNum;
@@ -68,6 +70,11 @@ function depositFunc(e) {
   console.log(index.amount);
 }
 
+fetch(API)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+  });
 form.addEventListener("submit", formCheck);
 searchF.addEventListener("submit", searchArr);
 withdrawBtn.addEventListener("click", withdrawFunc);
